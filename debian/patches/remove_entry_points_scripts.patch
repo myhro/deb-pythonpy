@@ -1,0 +1,30 @@
+Description: by default pythonpy have a way of generating its binaries as
+"entry points" in setup.py. This is not needed by the Debian package, as those
+binaries are symlinked from the Python scripts on "/usr/share/".
+Author: Tiago Ilieve <tiago.ilieve@gmail.com>
+
+--- a/setup.py
++++ b/setup.py
+@@ -31,14 +31,6 @@
+ 
+ data_files = [(target, ['pythonpy/pycompletion.sh']),]
+ 
+-py_entry = 'py%s = pythonpy.__main__:main'
+-pycompleter_entry = 'pycompleter%s = pythonpy.pycompleter:main'
+-endings = ('', sys.version[:1], sys.version[:3])
+-entry_points_scripts = []
+-for e in endings:
+-    entry_points_scripts.append(py_entry % e)
+-    entry_points_scripts.append(pycompleter_entry % e)
+-
+ setup(
+     name='pythonpy',
+     version='0.4.4',
+@@ -48,7 +40,4 @@
+     url='https://github.com/Russell91/pythonpy',
+     long_description='https://github.com/Russell91/pythonpy',
+     packages = ['pythonpy'],
+-    entry_points = {
+-        'console_scripts': entry_points_scripts
+-    },
+ )
