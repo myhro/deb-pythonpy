@@ -1,0 +1,25 @@
+Source: pythonpy
+Section: python
+Priority: optional
+Maintainer: Tiago Ilieve <tiago.myhro@gmail.com>
+Build-Depends: debhelper (>= 9),
+               python (>= 2.7.3),
+               python-setuptools (>= 0.6.24)
+Standards-Version: 3.9.7
+X-Python-Version: >= 2.7
+Homepage: https://github.com/Russell91/pythonpy
+Vcs-Git: https://github.com/myhro/deb-pythonpy.git
+Vcs-Browser: https://github.com/myhro/deb-pythonpy
+
+Package: pythonpy
+Architecture: all
+Depends: ${misc:Depends}, ${python:Depends}
+Description: 'python -c', with tab completion and shorthand
+ pythonpy is an utility that facilitates the usage of Python one-liners. The
+ command 'py' evaluates a string consisting of any Python expression. It can do
+ anything from simple arithmetic to complex operations, importing modules
+ automatically. It also comes with tab completion.
+ .
+ Its usage is not restricted to single expressions only. There's also the
+ possiblity to pipe data from stdin and to stdout, even generating strings to
+ be evaluated by other programs.
