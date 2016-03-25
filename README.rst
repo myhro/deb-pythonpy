@@ -3,7 +3,7 @@ Installation
 
 ::
 
-  sudo pip install pythonpy
+  pip install pythonpy
 
 ::
 
@@ -166,5 +166,12 @@ Count words beginning with each letter
 
 ::
 
-For more examples, check out the `wiki <http://github.com/Russell91/pythonpy/wiki>`__
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+For more examples, check out the `wiki <http://github.com/Russell91/pythonpy/wiki>`__.
+
+Pythonpy also supports ipython style tab completion, which you can enable as follows
+
+::
+
+  $ source `find_pycompletion.sh`
+
+::
