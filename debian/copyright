@@ -2,12 +2,12 @@ Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: pythonpy
 Source: https://github.com/Russell91/pythonpy
 
-Files: debian/*
-Copyright: 2016, Tiago Ilieve <tiago.myhro@gmail.com>
-License: MIT
-
 Files: *
 Copyright: 2014-2016, Russell Stewart <russell.s.stewart@gmail.com>
+License: MIT
+
+Files: debian/*
+Copyright: 2016, Tiago Ilieve <tiago.myhro@gmail.com>
 License: MIT
 
 License: MIT
