@@ -1,5 +1,5 @@
 Source: pythonpy
-Section: python
+Section: utils
 Priority: optional
 Maintainer: Tiago Ilieve <tiago.myhro@gmail.com>
 Build-Depends: bash-completion,
