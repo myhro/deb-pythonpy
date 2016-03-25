@@ -21,5 +21,5 @@ Description: 'python -c', with tab completion and shorthand
  automatically. It also comes with tab completion.
  .
  Its usage is not restricted to single expressions only. There's also the
- possiblity to pipe data from stdin and to stdout, even generating strings to
+ possibility to pipe data from stdin and to stdout, even generating strings to
  be evaluated by other programs.
