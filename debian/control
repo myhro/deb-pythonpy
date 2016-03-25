@@ -2,7 +2,8 @@ Source: pythonpy
 Section: python
 Priority: optional
 Maintainer: Tiago Ilieve <tiago.myhro@gmail.com>
-Build-Depends: debhelper (>= 9),
+Build-Depends: bash-completion,
+               debhelper (>= 9),
                python (>= 2.7.3),
                python-setuptools (>= 0.6.24)
 Standards-Version: 3.9.7
@@ -13,7 +14,9 @@ Vcs-Browser: https://github.com/myhro/deb-pythonpy
 
 Package: pythonpy
 Architecture: all
-Depends: ${misc:Depends}, ${python:Depends}
+Depends: ${misc:Depends},
+         ${python:Depends}
+Suggests: bash-completion
 Description: 'python -c', with tab completion and shorthand
  pythonpy is an utility that facilitates the usage of Python one-liners. The
  command 'py' evaluates a string consisting of any Python expression. It can do
