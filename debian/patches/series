@@ -1,2 +1,2 @@
 remove_entry_points_scripts.patch
-add_find_pycompletion_hashbang.patch
+remove_find_pycompletion.patch
