@@ -172,6 +172,6 @@ Pythonpy also supports ipython style tab completion, which you can enable as fol
 
 ::
 
-  $ source `find_pycompletion.sh`
+  $ if command -v find_pycompletion.sh>/dev/null; then source `find_pycompletion.sh`; fi
 
 ::
