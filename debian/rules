@@ -4,6 +4,11 @@
 	dh $@ --with bash-completion,python2
 
 
+override_dh_auto_build:
+	dh_auto_build
+	txt2man -s 1 -t py debian/docs/py.txt > debian/py.1
+
+
 override_dh_auto_install:
 	python setup.py install --root=debian/pythonpy --install-layout=deb --install-lib=/usr/share/pythonpy --install-scripts=/usr/share/pythonpy
 
