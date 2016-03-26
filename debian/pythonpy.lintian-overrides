@@ -1,0 +1,3 @@
+# The 'pycompleter' binary should not be used by an end-user, so it doesn't
+# needs a manpage. It is used internally by the tab-completion funcionality.
+pythonpy: binary-without-manpage usr/bin/pycompleter
