@@ -4,6 +4,7 @@ Priority: optional
 Maintainer: Tiago Ilieve <tiago.myhro@gmail.com>
 Build-Depends: bash-completion,
                debhelper (>= 9),
+               dh-python,
                python (>= 2.7.3),
                python-setuptools (>= 0.6.24)
 Build-Depends-Indep: txt2man
