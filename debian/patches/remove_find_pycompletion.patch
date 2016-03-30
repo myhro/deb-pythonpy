@@ -1,4 +1,5 @@
 Description: this file is needed only when bash-completion is not available.
+Forwarded: not-needed
 Author: Tiago Ilieve <tiago.ilieve@gmail.com>
 
 --- a/pythonpy/find_pycompletion.sh

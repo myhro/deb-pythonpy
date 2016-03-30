@@ -1,6 +1,7 @@
 Description: by default pythonpy have a way of generating its binaries as
 "entry points" in setup.py. This is not needed by the Debian package, as those
 binaries are symlinked from the Python scripts on "/usr/share/".
+Forwarded: not-needed
 Author: Tiago Ilieve <tiago.ilieve@gmail.com>
 
 --- a/setup.py
