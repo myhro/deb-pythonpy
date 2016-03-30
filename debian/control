@@ -5,11 +5,11 @@ Maintainer: Tiago Ilieve <tiago.myhro@gmail.com>
 Build-Depends: bash-completion,
                debhelper (>= 9),
                dh-python,
-               python (>= 2.7.3),
-               python-setuptools (>= 0.6.24)
+               python3,
+               python3-setuptools
 Build-Depends-Indep: txt2man
 Standards-Version: 3.9.7
-X-Python-Version: >= 2.7
+X-Python-Version: >= 3.3
 Homepage: https://github.com/Russell91/pythonpy
 Vcs-Git: https://github.com/myhro/deb-pythonpy.git
 Vcs-Browser: https://github.com/myhro/deb-pythonpy
@@ -17,7 +17,7 @@ Vcs-Browser: https://github.com/myhro/deb-pythonpy
 Package: pythonpy
 Architecture: all
 Depends: ${misc:Depends},
-         ${python:Depends}
+         ${python3:Depends}
 Suggests: bash-completion
 Description: 'python -c', with tab completion and shorthand
  pythonpy is an utility that facilitates the usage of Python one-liners. The

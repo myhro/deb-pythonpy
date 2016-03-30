@@ -1,7 +1,9 @@
 #!/usr/bin/make -f
 
+export PYBUILD_NAME=pythonpy
+
 %:
-	dh $@ --with bash-completion,python2
+	dh $@ --with bash-completion,python3 --buildsystem=pybuild
 
 
 override_dh_auto_build:
@@ -10,7 +12,7 @@ override_dh_auto_build:
 
 
 override_dh_auto_install:
-	python setup.py install --root=debian/pythonpy --install-layout=deb --install-lib=/usr/share/pythonpy --install-scripts=/usr/share/pythonpy
+	python3 setup.py install --root=debian/pythonpy --install-layout=deb --install-lib=/usr/share/pythonpy --install-scripts=/usr/share/pythonpy
 
 
 override_dh_fixperms:
@@ -19,7 +21,7 @@ override_dh_fixperms:
 	chmod 755 debian/pythonpy/usr/share/pythonpy/pythonpy/pycompleter.py
 
 
-override_dh_python2:
-	dh_python2
-	sed -i 's,^#!/usr/bin/.*,#!/usr/bin/python,' debian/pythonpy/usr/share/pythonpy/pythonpy/*.py
+override_dh_python3:
+	dh_python3
+	sed -i 's,^#!/usr/bin/.*,#!/usr/bin/python3,' debian/pythonpy/usr/share/pythonpy/pythonpy/*.py
 	rm -rf debian/pythonpy/usr/share/pythonpy/pythonpy-*.egg-info/
