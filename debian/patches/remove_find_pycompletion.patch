@@ -5,7 +5,7 @@ Author: Tiago Ilieve <tiago.ilieve@gmail.com>
 --- a/pythonpy/find_pycompletion.sh
 +++ /dev/null
 @@ -1,5 +0,0 @@
--python -c '
+-py -c '
 -import os
 -import pkg_resources
 -print(os.path.abspath(pkg_resources.resource_filename("pythonpy.completion", "pycompletion.sh")))
