@@ -9,6 +9,7 @@ Build-Depends: bash-completion,
                python3-setuptools
 Build-Depends-Indep: txt2man
 Standards-Version: 3.9.7
+Testsuite: autopkgtest
 X-Python-Version: >= 3.3
 Homepage: https://github.com/Russell91/pythonpy
 Vcs-Git: https://github.com/myhro/deb-pythonpy.git
