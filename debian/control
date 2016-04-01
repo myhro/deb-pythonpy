@@ -12,8 +12,8 @@ Standards-Version: 3.9.7
 Testsuite: autopkgtest
 X-Python-Version: >= 3.3
 Homepage: https://github.com/Russell91/pythonpy
-Vcs-Git: https://github.com/myhro/deb-pythonpy.git
-Vcs-Browser: https://github.com/myhro/deb-pythonpy
+Vcs-Git: https://anonscm.debian.org/git/collab-maint/pythonpy.git
+Vcs-Browser: https://anonscm.debian.org/git/collab-maint/pythonpy.git
 
 Package: pythonpy
 Architecture: all
