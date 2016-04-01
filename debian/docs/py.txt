@@ -7,6 +7,9 @@ SYNOPSIS
 DESCRIPTION
   pythonpy will evaluate any Python expression from the command line.
 
+  This will be done by the same Python interpreter that runs it. As this
+  version uses Python 3, it is compatible with Python 3 syntax only.
+
 OPTIONS
   -x             Treat each row of stdin as x
   -l             Treat list of stdin as l
