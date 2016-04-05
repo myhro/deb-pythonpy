@@ -13,6 +13,8 @@ override_dh_auto_build:
 
 override_dh_auto_install:
 	dh_auto_install -- --install-args "--install-lib=/usr/share/pythonpy --install-scripts=/usr/share/pythonpy"
+	# This script is needed only when bash-completion is not available
+	rm debian/pythonpy/usr/share/pythonpy/find_pycompletion.sh
 
 
 override_dh_auto_test:
