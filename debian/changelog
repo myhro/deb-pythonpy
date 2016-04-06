@@ -1,11 +1,12 @@
-pythonpy (0.4.11b-2) UNRELEASED; urgency=medium
+pythonpy (0.4.11b-2) unstable; urgency=medium
 
+  * Add missing copyright for 'pythonpy/pycompleter.py'.
   * Drop 'remove_find_pycompletion.patch'. Remove the file in
     'override_dh_auto_install' instead.
   * Prepend 'pythonpy.' to 'links' and 'manpages' for better 'debian/'
     directory organization.
 
- -- Tiago Ilieve <tiago.myhro@gmail.com>  Tue, 05 Apr 2016 04:51:23 -0300
+ -- Tiago Ilieve <tiago.myhro@gmail.com>  Wed, 06 Apr 2016 17:47:23 -0300
 
 pythonpy (0.4.11b-1) unstable; urgency=medium
 
