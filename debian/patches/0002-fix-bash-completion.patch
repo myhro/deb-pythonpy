@@ -1,8 +1,8 @@
 Description: this patch does two things. First, it removes every entry that is
 not used, as the only entry point available is the command 'py' itself. Then it
-updates 'pycompleter' path to use the internal binary located at
-'/usr/lib/pythonpy/pycompleter'. 
+updates 'pycompleter' path to use the internal executable directly.
 Forwarded: not-needed
+Last-Update: 2016-05-20
 Author: Tiago Ilieve <tiago.myhro@gmail.com>
 
 --- a/pythonpy/completion/pycompletion.sh
