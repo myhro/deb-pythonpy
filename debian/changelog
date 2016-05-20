@@ -1,16 +1,16 @@
 pythonpy (0.4.11b-3) unstable; urgency=medium
 
-  * Bump 'Standards-Version' to 3.9.8 (no changes needed).
-  * 'pycompleter' is now an internal binary under '/usr/lib/':
+  * Avoid 'pycompleter' as a system-wide executable:
     - Add '0002-fix-bash-completion.patch', to update its path and remove
     unneeded entries.
     - Drop 'debian/pythonpy.lintian-overrides', as it had only a
     'binary-without-manpage' override for it.
-    - Update 'debian/pythonpy.links', linking it to '/usr/lib/'.
+    - Remove it from 'debian/pythonpy.links'.
+  * Bump 'Standards-Version' to 3.9.8 (no changes needed).
   * Rename 'remove_entry_points_scripts.patch' to
     '0001-remove-entry-points-scripts.patch'.
 
- -- Tiago Ilieve <tiago.myhro@gmail.com>  Thu, 19 May 2016 04:52:52 -0300
+ -- Tiago Ilieve <tiago.myhro@gmail.com>  Fri, 20 May 2016 17:29:58 -0300
 
 pythonpy (0.4.11b-2) unstable; urgency=medium
 
